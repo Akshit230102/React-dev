@@ -1,0 +1,25 @@
+{
+  "name": "react-dev",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshit230102/React-dev.git"
+  },
+  "author": "Akshit Singhal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshit230102/React-dev/issues"
+  },
+  "homepage": "https://github.com/Akshit230102/React-dev#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
