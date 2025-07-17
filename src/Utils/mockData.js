@@ -1,28 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          alt="hello"
-          src="https://i.pinimg.com/474x/84/4d/85/844d8535fb36b860d3a16635ef20fbab.jpg"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const resList = [
   {
     card: {
@@ -680,89 +655,89 @@ const resList = [
   },
   {
     card: {
-        card: {
-      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-      info: {
-        id: "14951",
-        name: "Khan Chacha | Rolls, Kebabs And Biryani",
-        cloudinaryImageId: "9e9a4f728e2bf1e69f325179d0addd45",
-        locality: "Connaught Place",
-        areaName: "Connaught Place",
-        costForTwo: "₹400 for two",
-        cuisines: ["Kebabs", "Mughlai"],
-        avgRating: 4.5,
-        parentId: "587042",
-        avgRatingString: "4.5",
-        totalRatingsString: "11K+",
-        sla: {
-          deliveryTime: 25,
-          lastMileTravel: 0.4,
-          serviceability: "SERVICEABLE",
-          slaString: "20-25 mins",
-          lastMileTravelString: "0.4 km",
-          iconType: "ICON_TYPE_EMPTY",
-        },
-        availability: {
-          nextCloseTime: "2025-07-17 23:00:00",
-          opened: true,
-        },
-        badges: {},
-        isOpen: true,
-        type: "F",
-        badgesV2: {
-          entityBadges: {
-            imageBased: {},
-            textExtendedBadges: {},
-            textBased: {},
+      card: {
+        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+        info: {
+          id: "14951",
+          name: "Khan Chacha | Rolls, Kebabs And Biryani",
+          cloudinaryImageId: "9e9a4f728e2bf1e69f325179d0addd45",
+          locality: "Connaught Place",
+          areaName: "Connaught Place",
+          costForTwo: "₹400 for two",
+          cuisines: ["Kebabs", "Mughlai"],
+          avgRating: 4.5,
+          parentId: "587042",
+          avgRatingString: "4.5",
+          totalRatingsString: "11K+",
+          sla: {
+            deliveryTime: 25,
+            lastMileTravel: 0.4,
+            serviceability: "SERVICEABLE",
+            slaString: "20-25 mins",
+            lastMileTravelString: "0.4 km",
+            iconType: "ICON_TYPE_EMPTY",
           },
-        },
-        aggregatedDiscountInfoV3: {
-          header: "ITEMS",
-          subHeader: "AT ₹395",
-          logoCtx: {
-            text: "BENEFITS",
+          availability: {
+            nextCloseTime: "2025-07-17 23:00:00",
+            opened: true,
           },
-        },
-        orderabilityCommunication: {
-          title: {},
-          subTitle: {},
-          message: {},
-          customIcon: {},
-          commsStyling: {},
-        },
-        differentiatedUi: {
-          displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-          differentiatedUiMediaDetails: {
-            mediaType: "ADS_MEDIA_ENUM_IMAGE",
-            lottie: {},
-            video: {},
+          badges: {},
+          isOpen: true,
+          type: "F",
+          badgesV2: {
+            entityBadges: {
+              imageBased: {},
+              textExtendedBadges: {},
+              textBased: {},
+            },
           },
-        },
-        reviewsSummary: {},
-        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        restaurantOfferPresentationInfo: {},
-        externalRatings: {
-          aggregatedRating: {
-            rating: "4.0",
-            ratingCount: "3.3K+",
+          aggregatedDiscountInfoV3: {
+            header: "ITEMS",
+            subHeader: "AT ₹395",
+            logoCtx: {
+              text: "BENEFITS",
+            },
           },
-          source: "GOOGLE",
-          sourceIconImageId: "v1704440323/google_ratings/rating_google_tag",
+          orderabilityCommunication: {
+            title: {},
+            subTitle: {},
+            message: {},
+            customIcon: {},
+            commsStyling: {},
+          },
+          differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+              mediaType: "ADS_MEDIA_ENUM_IMAGE",
+              lottie: {},
+              video: {},
+            },
+          },
+          reviewsSummary: {},
+          displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          restaurantOfferPresentationInfo: {},
+          externalRatings: {
+            aggregatedRating: {
+              rating: "4.0",
+              ratingCount: "3.3K+",
+            },
+            source: "GOOGLE",
+            sourceIconImageId: "v1704440323/google_ratings/rating_google_tag",
+          },
+          ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
         },
-        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+        analytics: {},
+        cta: {
+          link: "swiggy://menu?restaurant_id=14951&source=collection&query=North%20Indian",
+          text: "RESTAURANT_MENU",
+          type: "DEEPLINK",
+        },
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
       },
-      analytics: {},
-      cta: {
-        link: "swiggy://menu?restaurant_id=14951&source=collection&query=North%20Indian",
-        text: "RESTAURANT_MENU",
-        type: "DEEPLINK",
+      relevance: {
+        type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+        sectionId: "MENU_RETURN_FOOD",
       },
-      widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
-    },
-    relevance: {
-      type: "RELEVANCE_TYPE_ON_MENU_RETURN",
-      sectionId: "MENU_RETURN_FOOD",
-    },
     },
   },
   {
@@ -1751,46 +1726,4 @@ const resList = [
   },
 ];
 
-const RestaurantCard = ({resData}) => {
-  const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } = resData.card.card.info;
-  return (
-    <div className="res-card">
-      <img
-        className="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
-      />
-      <h3> {name}</h3>
-      <h4> {cuisines.slice(0,4).join(", ")}</h4>
-      <h4> {avgRating} stars</h4>
-      <h4> {costForTwo}</h4>
-      <h4>{sla.slaString}</h4>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {resList.map((restaurant) => <RestaurantCard key={restaurant.card.card.info.id} resData={restaurant} />)}
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-      {/* <Footer /> */}
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resList;
