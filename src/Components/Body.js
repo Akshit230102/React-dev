@@ -2,23 +2,22 @@ import RestaurantCard from "./RestaurantCard";
 import resList from "../Utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { RES_API_URL } from "../Utils/constants";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const[filteredList, setFilteredList] = useState([]);
+  const [filteredList, setFilteredList] = useState([]);
 
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
-      "https://cors-anywhere.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.63270&lng=77.21980&collection=83633&tags=layout_CCS_NorthIndian&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
-    );
+    const data = await fetch(RES_API_URL);
     const json = await data.json();
-    setListOfRestaurants(json.data.cards.slice(3));
-    setFilteredList(json.data.cards.slice(3));
+    setListOfRestaurants(json?.data?.cards.slice(3));
+    setFilteredList(json?.data?.cards.slice(3));
   };
 
   return listOfRestaurants.length === 0 ? (
@@ -37,7 +36,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const updatedList = listOfRestaurants.filter(
-              (res) => res.card.card.info.avgRating > 4.3
+              (res) => res?.card?.card?.info?.avgRating > 4.3
             );
             setFilteredList(updatedList);
           }}
@@ -48,7 +47,7 @@ const Body = () => {
       <div className="res-container">
         {filteredList.map((restaurant) => (
           <RestaurantCard
-            key={restaurant.card.card.info.id}
+            key={restaurant?.card?.card?.info?.id}
             resData={restaurant}
           />
         ))}
