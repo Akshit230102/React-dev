@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
 import resList from "../Utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -6,9 +6,12 @@ import { RES_API_URL } from "../Utils/constants";
 import { Link } from "react-router";
 
 const Body = () => {
+
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filteredList, setFilteredList] = useState([]);
+
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -48,9 +51,7 @@ const Body = () => {
       <div className="flex flex-wrap">
         {filteredList.map((restaurant) => (
           <Link key={restaurant?.card?.card?.info?.id} to={"/restaurant/"+restaurant?.card?.card?.info?.id}>
-          <RestaurantCard
-            resData={restaurant}
-          />
+            {restaurant?.card?.card?.info.promoted ? <RestaurantCardPromoted resData={restaurant}/> : <RestaurantCard resData={restaurant}/>}
           </Link>
         ))}
       </div>
