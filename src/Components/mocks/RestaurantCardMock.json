@@ -1,0 +1,116 @@
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "8619",
+        "name": "Bikkgane Biryani",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/15/40cb7f19-6a78-424c-8d4b-0163bc4f42b8_8619.jpg",
+        "locality": "PVR Rivoli",
+        "areaName": "Connaught Place",
+        "costForTwo": "₹400 for two",
+        "cuisines": ["Biryani", "Mughlai", "North Indian"],
+        "avgRating": 4.3,
+        "parentId": "5070",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "30K+",
+        "promoted": true,
+        "adTrackingId": "cid=31351368~p=1~adgrpid=31351368#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=8619~plpr=COLLECTION~eid=a762cda5-5e06-490d-acb6-838647151b5d~srvts=1753877318404~collid=83633",
+        "sla": {
+          "deliveryTime": 18,
+          "lastMileTravel": 1.3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "1.3 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2025-07-31 01:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+              "description": "bolt!"
+            },
+            {
+              "imageId": "Rxawards/_CATEGORY-Biryani.png",
+              "description": "Delivery!"
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "textExtendedBadges": {},
+            "textBased": {},
+            "imageBased": {
+              "badgeObject": [
+                {
+                  "attributes": {
+                    "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                    "description": "bolt!"
+                  }
+                },
+                {
+                  "attributes": {
+                    "imageId": "Rxawards/_CATEGORY-Biryani.png",
+                    "description": "Delivery!"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹199",
+          "logoCtx": {
+            "text": "BENEFITS"
+          }
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {},
+          "commsStyling": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "4.1",
+            "ratingCount": "8.1K+"
+          },
+          "source": "GOOGLE",
+          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+        "campaignId": "31351368"
+      },
+      "analytics": {},
+      "cta": {
+        "link": "swiggy://menu?restaurant_id=8619&source=collection&query=North%20Indian",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": {
+      "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+      "sectionId": "MENU_RETURN_FOOD"
+    }
+  }
+}

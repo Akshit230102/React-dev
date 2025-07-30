@@ -1,12 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useSelector } from "react-redux";
 import { LOGO_URL } from "../Utils/constants";
 import { Link } from "react-router";
 import UserContext from "../Utils/UserContext";
 
 const Header = () => {
+  const [btnName, setBtnName] = useState("login")
   const user = useContext(UserContext);
   const cartItems = useSelector((store) => store.cart.items)
+
+  const handleClick = () => {
+    btnName === "login" ? setBtnName("logout") : setBtnName("login");
+  }
 
   return (
     <div className="flex justify-between bg-pink-100 shadow-lg">
@@ -22,6 +27,7 @@ const Header = () => {
           <li className="text-2xl m-5 p-1 hover:bg-pink-50 hover:rounded-xl"><Link to="/about">About Us</Link></li>
           <li className="text-2xl m-5 p-1 hover:bg-pink-50 hover:rounded-xl"><Link to="/contact">Contact Us</Link></li>
           <li className="text-2xl m-5 p-1 hover:bg-pink-50 hover:rounded-xl"><Link to="/cart">Cart - ({cartItems.length} items)</Link></li>
+          <li className="text-2xl m-5 p-1 hover:bg-pink-50 hover:rounded-xl"> <button className="cursor-pointer" onClick={handleClick}>{btnName}</button></li>
           <li className="text-2xl m-5 p-1">{user.loggedInUser}</li>
         </ul>
       </div>
