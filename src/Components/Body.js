@@ -33,7 +33,7 @@ const Body = () => {
     <div className="body">
       <div className="flex">
         <div className="flex items-center m-4">
-          <input type="text" className="border-1 mx-2" value={searchText} onChange={(e) => {setSearchText(e.target.value)}}></input>
+          <input data-testid="searchInput" type="text" className="border-1 mx-2" value={searchText} onChange={(e) => {setSearchText(e.target.value)}}></input>
           <button className="px-4 py-1 bg-green-100 rounded-xl hover:bg-green-200 cursor-pointer" onClick={()=>{
             setFilteredList(listOfRestaurants.filter((res)=> res.card.card.info.name.toLowerCase().includes(searchText.toLowerCase())))
           }}> Search 

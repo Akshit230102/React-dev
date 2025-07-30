@@ -7,8 +7,7 @@ describe("tests for RestaurantCard component", () => {
 
   it("should render RestaurantCard component with props data", () => {
     render(<RestaurantCard resData={MOCK_DATA} />);
-    screen.debug();
-
+    
     const name = screen.getByText("Bikkgane Biryani");
     expect(name).toBeInTheDocument();
   });
